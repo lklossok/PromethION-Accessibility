@@ -1,0 +1,7 @@
+PromethION_bam_dir: "../promethION_bams/genome"
+ATACseq_narrowPeak_dir: "../narrowPeak/data"
+
+sample_identifier: # Can be cell line, accession, whatever is tied to the BAM name
+  HCC1395BL: # If different names are used between PromethION and ATAC-seq, map them here. Make sure the order is the same for both lists. Here; HCC1395BL cell line matches with SRR29220767 accession. HCC1395BL will be the sample name.
+    prom: "HCC1395BL.hg38" # prefix used for the PromethION BAM sample
+    atac: "SRR29220767_peaks" # prefix of the ATACseq .narrowPeak sample
